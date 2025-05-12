@@ -1,0 +1,6 @@
+Array
+(
+    [id] => 25
+    [campo] => nome
+    [valor] => Novo Item
+)
