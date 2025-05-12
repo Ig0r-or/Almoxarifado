@@ -1,10 +1,10 @@
 <?php
 header('Content-Type: application/json');
 
-$host = "sql201.infinityfree.com";
-$user = "if0_38675151";
-$password = "6KUnPJcDNdqlcO";
-$dbname = "if0_38675151_db_registro";
+$host = "XXXXXXXXXXXXXXXX";
+$user = "XXXXXXXXXXXXXXXXX";
+$password = "XXXXXXXXXXXXXXXXXX";
+$dbname = "XXXXXXXXXXXXXXXXX_db_registro";
 
 $conn = new mysqli($host, $user, $password, $dbname);
 

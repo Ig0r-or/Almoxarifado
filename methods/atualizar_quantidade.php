@@ -7,11 +7,11 @@ if (!isset($_SESSION['usuario_id']) || !isset($_SESSION['usuario_cargo'])) {
     die(json_encode(["status" => "error", "message" => "Acesso não autorizado. Faça login primeiro."]));
 }
 
-$host = "sql201.infinityfree.com";
-$user = "if0_38675151";
-$password = "6KUnPJcDNdqlcO";
-$dbname = "if0_38675151_db_registro";
-
+$host = "XXXXXXXXXXXXXXXX";
+$user = "XXXXXXXXXXXXXXXXX";
+$password = "XXXXXXXXXXXXXXXXXX";
+$dbname = "XXXXXXXXXXXXXXXXX_db_registro";
+s
 $conn = new mysqli($host, $user, $password, $dbname);
 
 if ($conn->connect_error) {

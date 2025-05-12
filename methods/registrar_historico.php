@@ -9,13 +9,11 @@ if (!isset($_SESSION['usuario_id']) || !isset($_SESSION['usuario_cargo'])) {
     die(json_encode(["status" => "error", "message" => "Acesso não autorizado. Faça login primeiro."]));
 }
 
-// Configurações do banco de dados
-$host = "sql201.infinityfree.com";
-$user = "if0_38675151";
-$password = "6KUnPJcDNdqlcO";
-$dbname = "if0_38675151_db_registro";
+$host = "XXXXXXXXXXXXXXXX";
+$user = "XXXXXXXXXXXXXXXXX";
+$password = "XXXXXXXXXXXXXXXXXX";
+$dbname = "XXXXXXXXXXXXXXXXX_db_registro";
 
-// Conexão com o banco
 $conn = new mysqli($host, $user, $password, $dbname);
 
 if ($conn->connect_error) {
@@ -25,7 +23,7 @@ if ($conn->connect_error) {
     ]));
 }
 
-// Verificar permissões primeiro
+// Verificar permissões
 $usuario_id = $_SESSION['usuario_id'];
 $query = "SELECT c.nivel FROM usuarios u JOIN cargos c ON u.cargo_id = c.id WHERE u.id = ?";
 $stmt = $conn->prepare($query);
